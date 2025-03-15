@@ -79,6 +79,7 @@ const allSongs = [
 ];
 
 const audio = new Audio();
+audio.addEventListener("ended", playNextSong);
 let userData = {
   songs: [...allSongs],
   currentSong: null,
